@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+/* --- Variables globales --- */
+
+:root {
+/* Colores base */
+    --accent-color: #FEC949;
+    --grey-color: #e6e6e6;
+    --grey-color-alt: rgb(238, 242, 255);
+    --border-color: rgba(0, 0, 0, 0.1);
+
+/* Colores de fondo */
+    --bg-color: #fec849e3;
+    --bg-color-active: #e5e5e5;
+
+/* Colores de texto */
+    --text-color: #5e5e5e;
+    --text-color-alt: #898989;
+
+/* Fuentes */
+    --body-font: 'Roboto', sans-serif;
+    --icon-font: 'icomoon';
+
+/* Tamaño de texto */
+    --big-font-size: 1.725rem; /* 18px */
+    --normal-font-size: 1.3rem; /* 16px */
+    --small-font-size: 1rem; /* 14px */  
+
+/* Otros */
+    --border-radius: 25px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    border: 0;
+    background-image: url('./img/diana-polekhina-ZSpkUThb7qk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+}
+.form-group {
+    height: 400px;
+    width: 450px;
+    margin: 10vh auto;
+    background-color: var(--bg-color);
+    display: block;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: 2px 2px 7.5px var(--border-color);
+}
+.form-group:hover {
+    transition: 0.8s;
+    transform: scale(1.05);
+}
+
+input {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #dbeffe;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0.87rem 0;
+}
+input:hover {
+    background-color: var(--grey-color);
+}
+#submit {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color:#289df6;
+    color: #fff;
+    margin: auto;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+h1 {
+    font-size: var(--big-font-size);
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+h2 {
+    font-size: var(--body-font);
+    font-weight: 300;
+    text-align: center;
+    color: var(--text-color-alt);
+    padding: 0 0 1rem;
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+}
+.btn {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    margin-top: 2rem;
+}
+.btn:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+#result{
+    margin-top: 1.5rem;
+}
